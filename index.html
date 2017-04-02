@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Unraveling Logarithms</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <link href="logarithms.css" rel="stylesheet">
+</head>
+
+<body>
+    <p>
+        Sometimes to make the harder things simpler, you have to make the simpler things harder. Vi Hart's fascinating <a href="https://www.youtube.com/watch?v=N-7tcTIrers">video</a> on Logarithms was something that I wanted to unravel. Fancy Counting. It is a story of addition, multiplication and exponentiation. Hover over the count numbers to interact with it.
+    </p>
+    <p>
+    	Addition is where we all start. One potato, two potato, three potatoes. It is all a sequence of +1 steps. <span class="addition">Count <span class="counts life-overlay">3</span> steps of +<span class="step">1</span>, get to <span class="magnitude">3</span>. Just <span class="operation">+1 +1 +1</span>.</span> Obvious? Yes! Yet, we are trying to make the simpler things harder. So bear with me here. There are two key operations going on in this simple counting. The number of counts, the magnitude we get to by applying these number of counts.
+    </p>
+    <p>
+    	Multiplication makes this slightly more obvious. After all, it is still fancy counting, except that we count in different sized steps. <span class="multiplication">No longer are we tied to +1s, we do +n, so counting <span class="counts life-overlay">4</span> steps of +<span class="step">2</span>, get you <span class="magnitude">8</span>. Just <span class="operation">+2 +2 +2 +2 +2</span>.</span> So bigger steps but less number of steps.
+    </p>
+    <p>
+    	So where else do we go from here? Exponentiation. <span class="exponentiation">Now, the operation itself is different, each time we apply a x n, on a System That Counts in x<span class="step">2</span> (STCx<span class="step">2</span>), <span class="counts life-overlay">3</span> counts gives you <span class="magnitude">8</span>. <span class="operation">x 2 x 2 x2</span>.</span>
+    </p>
+    <p>
+        What now, though? Another obvious question, how many counts of +<span class="step">1</span> does it take to get to <span class="magnitude">3</span>? Well, <span class="counts">3</span> duh!
+    </p>
+    <p>
+        How many counts of +<span class="step">2</span> (or more generally +n) does it take to make <span class="magnitude">16</span>? It is simply <span class="operation">+2 +2 +2 +2 +2 +2 +2 +2</span> or <span class="counts">8</span> steps. Or maybe, we look at the division function? 16/+2 is simply <span class="counts">8</span>.
+    </p>
+    <p>
+        So in a STC X3, how many counts gives you <span class="magnitude">81</span>? log₃(81) = <span class="counts">4</span>! This scale is the logarithmic scale!
+    </p>
+    <script src="logarithms.js" charset="utf-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+.body {
+	background-color: #fffff8;
+  }
+p {
+	font-family: "Gill Sans";
+    font-size: 15px;
+}
+
+.counts {
+	color: #ca0020;
+}
+.magnitude {
+	color: #0571b0;
+}
+.operation {
+	color: #15ba3e;
+}
+.life-overlay {
+      pointer-events: stroke;
+      stroke-width: 50px;
+      cursor: crosshair;
+  }
